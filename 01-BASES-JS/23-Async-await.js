@@ -1,0 +1,5 @@
+/*Una funcion asincrona por defecto devuelve una promesa
+ 
+El await solo se puede utilizar dentro de una function asincrona
+
+*/
