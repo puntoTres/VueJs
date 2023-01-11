@@ -15,7 +15,6 @@ const apiKey = '6DjV26FkPzU49xvOVIEeWMLuz4ovTwqC'
 //     )
 
 //Segunda opcion mas sencilla
-
 fetch(`https://api.giphy.com/v1/gifs/random?api_key=${apiKey}`)
     .then(resp => resp.json())
     .then(({ data }) => {
@@ -23,8 +22,6 @@ fetch(`https://api.giphy.com/v1/gifs/random?api_key=${apiKey}`)
         const img = document.createElement('img');
         img.src = url;
         document.body.appendChild(img);
-
-
     })
        
     
