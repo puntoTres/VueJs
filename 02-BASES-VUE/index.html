@@ -12,13 +12,27 @@
 
 <body>
     <div id="myApp">
-        <h1> {{ title }} </h1>
-        <p> {{ message }} </p>
-
-        <button v-on:click="cambiarTitulo"> Cambiar titulo </button>
+        <h1>Frases de Batman  <small>{{sms}}</small></h1>
+        <input 
+        type="text"
+         v-model="sms"
+         v-on:keypress.enter="addFrases"
+         >
+        <hr>
+        <!-- {{ frases }} -->
+        <ul>
+            <!-- <li v-for="(frase,index) in frases">
+                <span> {{index+1}}{{ frase.quote }}</span>
+                <blockquote>{{ frase.author }}</blockquote>
+            </li> -->
+            <li v-for="({quote, author},index) in frases">
+                <span>{{index+1}} - {{ quote }}</span>
+                <blockquote v-if="author !== undefined">- {{ author }}</blockquote>
+            </li>
+        </ul>
     </div>
 
-   
+
     <script src="app.js"></script>
 
 </body>
