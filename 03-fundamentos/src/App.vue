@@ -1,6 +1,7 @@
 <template>
   <img alt="Vue logo" src="./assets/logo.png">
-  <Counter/>
+  <Counter title="Entraron" v-bind:start="40"/>
+  <Counter title="goku" v-bind:start="1"/>
 </template>
 
 <script>
