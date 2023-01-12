@@ -1,6 +1,6 @@
 <template>
-    <h2>{{ cambiarNombre }}</h2>
-    <p>{{ counter }} <sup>2</sup> {{ frasesCounter }}</p>
+    <h2>{{ cambiarNombre }}</h2><!--Metodo que esta en el computed-->
+    <p>{{ counter }} <sup>2</sup> {{ frasesCounter }}</p><!--VAriable y Metodo que esta en el computed-->
 
     <div>
         <!-- El atajo de v-on es igual que @ -->
@@ -17,7 +17,7 @@ export default {
     props:['title','start'],// Los atributos,parametros de un componente    
     name:'Counter',// Nombre que se va asignar en el componente DevTools
     data(){
-        //Es una funcion que devuelve un obejto reactiva
+        //Es una funcion que devuelve un objeto reactiva
         // Esta pendiente de cualquier cambio y va a reaccionar
         return{
             counter:this.start
