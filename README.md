@@ -160,3 +160,27 @@ Los "methods" son funciones JavaScript que se utilizan para realizar tareas espe
 Los "computed" son propiedades calculadas que se actualizan automáticamente en función de los cambios en los datos. A diferencia de los methods, las propiedades calculadas son accesibles desde la plantilla de la misma manera que las propiedades de los datos. Las propiedades calculadas son reactivas, es decir, si se actualizan las propiedades utilizadas para calcularlas, también se actualizarán automáticamente.
 
 En resumen, los methods son funciones que se ejecutan explicitamente cuando se llaman, mientras que los computed son propiedades calculadas que se actualizan automáticamente en función de los cambios en los datos. Los computed son útiles para crear propiedades que se calculan a partir de otras propiedades, permitiendo una mejor organización y legibilidad del código, mientras que los methods son útiles para realizar acciones o tareas específicas que requieren una acción del usuario o un evento específico.
+
+# Seccion 05 - Vue CLI - Primera aplicación real.
+
+# Option API (Vue 2)
+
+La Options API es el modo tradicional de escribir componentes en Vue.js. Básicamente, se define un objeto con diferentes opciones como data, methods, computed, etc. y se lo pasa al constructor de Vue.
+
+Por ejemplo:
+
+Vue.component('my-component', {
+  data: function () {
+    return {
+      message: 'Hello, Vue.js!'
+    }
+  },
+  template: '<p>{{ message }}</p>'
+})
+En este ejemplo, el objeto con las opciones es pasado al constructor de Vue como segundo argumento para definir un componente reutilizable.
+La Options API es fácil de aprender para quienes están familiarizados con otros frameworks de JavaScript, pero con el tiempo, se vuelve un poco más difícil de manejar y mantener con un alto grado de complejidad en el código.
+
+
+# Composition Api (Vue 3)
+
+La Composition API es una nueva característica en Vue.js (versión 3) que permite escribir componentes de Vue de una manera diferente a la tradicional "Options API". La Composition API permite escribir componentes basados en funciones en lugar de objetos, lo que permite una mayor flexibilidad y reutilización de código. También facilita la lectura y el mantenimiento del código al permitir una mejor organización del mismo.

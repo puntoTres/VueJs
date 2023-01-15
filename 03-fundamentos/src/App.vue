@@ -1,17 +1,20 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <Counter title="Entraron" v-bind:start="40"/>
-  <Counter title="goku" v-bind:start="1"/>
+  <indecision/>
+  <!-- <img alt="Vue logo" src="./assets/logo.png">
+  <Counter title="Entraron" v-bind:start="40"/> -->
+  <!-- <Counter title="goku" v-bind:start="1"/> -->
 </template>
 
 <script>
 /*Importamos todos los componentes */
 import Counter from './components/Counter.vue'
+import Indecision from './components/Indecision.vue'
 
 export default {
   name: 'App',
   components: {//Defino el documento importado
-    Counter
+    Counter,
+    Indecision
   }
 }
 </script>
