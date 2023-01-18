@@ -184,3 +184,36 @@ La Options API es fácil de aprender para quienes están familiarizados con otro
 # Composition Api (Vue 3)
 
 La Composition API es una nueva característica en Vue.js (versión 3) que permite escribir componentes de Vue de una manera diferente a la tradicional "Options API". La Composition API permite escribir componentes basados en funciones en lugar de objetos, lo que permite una mayor flexibilidad y reutilización de código. También facilita la lectura y el mantenimiento del código al permitir una mejor organización del mismo.
+
+# Watch: 
+
+En Vue.js, el "watch" es una función que permite realizar un seguimiento de cambios en una propiedad de datos específica y ejecutar una acción específica cuando esa propiedad cambia. Se utiliza para escuchar cambios en una propiedad y actualizar otras partes de la aplicación en consecuencia. Por ejemplo, si una propiedad se usa para filtrar una lista, un "watch" puede ser configurado para actualizar la lista cada vez que la propiedad de filtro cambia.
+
+# v-model
+
+v-model es una directiva en Vue.js que se utiliza para crear una relación bidireccional entre un elemento de formulario y una propiedad de datos. Es similar a v-bind para establecer el valor de un elemento de formulario y v-on para escuchar eventos de cambio en el elemento.
+
+La sintaxis para usar v-model es:
+
+<template>
+  <input v-model="nombrePropiedad">
+</template>
+
+<script>
+export default {
+  data() {
+    return {
+      nombrePropiedad: ''
+    }
+  }
+}
+</script>
+En el ejemplo anterior, la entrada está vinculada a la propiedad nombrePropiedad en el objeto data. Cualquier cambio en el valor de la entrada se reflejará en la propiedad y viceversa.
+
+También se puede utilizar v-model en elementos como select, checkbox o radio para vincular su valor a una propiedad de datos.
+
+# v-bind
+El "v-bind" en Vue.js es una directiva que se utiliza para enlazar una propiedad de un elemento del DOM con una propiedad de un componente Vue. Con esta directiva, puedes actualizar automáticamente el valor de una propiedad del DOM cuando cambia el valor de una propiedad en el componente. Por ejemplo, si tienes un componente Vue con una propiedad llamada "mensaje" y quieres enlazar esa propiedad con el valor de un elemento de entrada, puedes utilizar "v-bind" de la siguiente manera: <input v-bind:value="mensaje">
+
+
+# Sección 6: Introduccion a las pruebas unitarias y de integracion
