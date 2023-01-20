@@ -217,3 +217,35 @@ El "v-bind" en Vue.js es una directiva que se utiliza para enlazar una propiedad
 
 
 # Sección 6: Introduccion a las pruebas unitarias y de integracion
+
+Las pruebas unitarias estan enfocadas en pequeñas funcionalidades de nuestra app.
+
+Ejemplo:
+  un rueda de un coche.
+
+Las pruebas de integración estan efocadas en como reaccionan varias piezas unitarias en conjuntos
+
+Ejemplo:
+ Cuatro ruedas de un coche
+
+ Las pruebas tienen que ser:
+ 1- Faciles de escribir - NO tiene que tenr muchas logica
+ 2- Faciales de leer
+ 3- Confiables -
+ 4- Rapidas.
+ 5- Principalmente unitarias
+
+Concepto de las pruebas: [A.A.A]
+-Arrange - Arreglar - Preparamos a preparar el ambiente para hacer la pruebas( PAra un componentes) Inicializamos variables, importaciones necesarias
+-Act - Actuar       - Realizamos acciones y estimulos - EJmplo: LLamar  a metodos Simular clicks. Lo que queremos simular
+-Assert - Afirmar   - Observa el comportamiento resultante - Ejemplo: Que algo cambie, algo incremente.
+
+
+Mitos de testing
+
+- NO asegura que la aplicaciones  tenga errores.
+- Las pruebas pueden fallas
+- Las pruebas no hacen mas lenta mi aplicacion, las pruebas nunca llegan a produccion.
+- NO son una perdida de tiempo, aunque es cierto que las pruebas tardan en hacerse igual que el desarrollar la app
+- Hay que probarlo todo
+
