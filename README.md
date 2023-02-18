@@ -249,3 +249,6 @@ Mitos de testing
 - NO son una perdida de tiempo, aunque es cierto que las pruebas tardan en hacerse igual que el desarrollar la app
 - Hay que probarlo todo
 
+# Expect
+
+Cuando estás escribiendo tests, a menudo necesitas comprobar que los valores cumplen ciertas condiciones. expect te da acceso a un número de funciones que te permiten validar diferentes componentes.

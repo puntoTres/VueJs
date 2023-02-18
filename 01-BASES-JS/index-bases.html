@@ -5,17 +5,76 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        body{
-            background-color: black;
-        }
-    </style>
+  
 </head>
 <body>
     <!-- <script src="09.js"></script> -->
    <!-- <script type="module" src="22-Axios.js"></script>-->
    <!-- <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script> -->
-   <script type="module" src="25-Ternarios-nullCheck.js"></script>
+
+   <div class="contenedor">
+    <p class="visible-0 first">¿aaaaaaaaaaaaaaaaaaaaaaaaaaaaa?</p>
+    <p class="visible-1">¿eeeeeeeeeeeeeeeeeeeeeeeeeeeee?</p>
+    <p class="visible-2">¿iiiiiiiiiiiiiiiiiiiiiiiiiiiiiii?</p>
+    <p class="visible-3 ">¿oooooooooooooooooooooooooooooooo?</p>
+    <p class="visible-1">¿uuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuu?</p>
+    <p class="visible-2">¿Bla bla bla bla bla bla bbla?</p>
+    <p class="visible-0">¿Bla bla bla bla bla bla bbla?</p>
+   </div>
+   <script type="module" src="26-CarruselParrafos.js"></script>
   
 </body>
 </html>
+
+<style >
+    body{
+               background-color: black;
+           }
+
+           .contenedor{
+            border: 1px solid white;
+            height: 20rem;
+           }
+   
+           .contenedor p{
+               
+                   color:white;
+                   text-align: center;
+                  
+               
+           }
+
+           /*keyframe animations*/
+/* .first {
+	        animation: bannermove 9s linear infinite;
+            
+} */
+ 
+@keyframes bannermove {
+ 0% {
+    margin-top: 0px;
+ }
+ 100% {
+    margin-top: -20%;
+ }
+ 
+}
+ 
+
+           .visible-0{
+            opacity: 0.2;
+
+           }
+           .visible-1{
+
+            opacity: 0.4;
+
+           }
+           .visible-2{
+            opacity: 0.5;
+            }
+            .visible-3{
+                opacity: 1;
+            }
+   
+   </style>
